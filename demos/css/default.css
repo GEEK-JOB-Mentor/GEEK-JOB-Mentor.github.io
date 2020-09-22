@@ -94,7 +94,6 @@ header {
 
 .header-right {
     /* float: right; */
-    overflow: auto;
     display: block;
     font-size: 18px;
     margin: 20px;
