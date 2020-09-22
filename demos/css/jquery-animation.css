@@ -1,0 +1,182 @@
+/* ------------------------------------------
+アコーディオンメニュー
+------------------------------------------ */
+
+.accordion-container {
+    position: relative;
+    float: left;
+    width: 1100px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    padding: auto;
+    /* border: 1px solid #0B1A55; */
+    border-top: none;
+    outline: 0;
+    cursor: pointer
+  }
+  
+  .accordion-container .accordion-title {
+    display: block;
+    margin: 0;
+    padding: 20px 10px 10px 20px;
+    width: auto;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    background: #0B1A55;
+    cursor: pointer;
+  }
+
+  .accordion-content {
+    display: none;
+    width: auto;
+    border: 1px solid #E8E8E8;
+    background: #FFFFFF;
+  }
+
+  .accordion-content p {
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  /* マウスオーバー時のカラー */
+  .accordion-container .accordion-title:hover,
+  .accordion-container .accordion-title:active,
+  .accordion-container .content-entry.open .accordion-title {
+    background-color: #f1852c;
+    color: white;
+  }
+  
+  .accordion-container .accordion-title:hover i:before,
+  .accordion-container .accordion-title:hover i:active,
+  .accordion-container .content-entry.open i {
+    color: white;
+  }
+  
+  .accordion-title{
+    height: 40px;
+    position: relative;
+  }
+  
+  .accordion-title:after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 38%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .accordion-title.open:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 45%;
+  }
+  
+  /* CSS for CodePen
+  .accordion-container {
+    width: 300px;
+    margin: 1.875em auto;
+  } */
+  
+/* ------------------------------------------
+モーダル全般
+------------------------------------------ */
+  .modal{
+      float: left;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      display: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+  }
+  .modal__bg{
+      background: rgba(0, 0, 0, 0.74);
+      height: 100vh;
+      position: static;
+      width: 100%;
+  }
+  .modal__content{
+      background: #fff;
+      left: 50%;
+      padding: 40px;
+      font-size: 20px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 60%;
+  }
+  .modal__content__slide{
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: auto;
+  }
+
+  /* --------------------------------------
+  アニメーションボタン
+  -------------------------------------- */
+  .button {
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    outline: none;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #354273;
+  }
+
+  .button2 {
+    display: flex;
+    width: 250px;
+    height: 45px;
+    outline: none;
+    margin: 25px auto 10px auto;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #f5a623;
+  }
+
+  .button,
+  .button2 p{
+    margin: auto;
+    padding: 0;
+    color: #ebebeb;
+    font-size: 18px;
+  }
+
+  .button::before,
+  .button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .button,
+  .button::before,
+  .button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .button:hover {
+    background-color: #f5a623;
+  }
+    
+    
