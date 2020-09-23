@@ -20,7 +20,7 @@
     </script>
     <!-- ヘッダーここまで -->
 
-    <!-- スライドのモーダル処理 -->
+    <!-- 課題スライドのモーダル処理 -->
     <div id="modal02" class="modal js-modal">
         <div class="modal__bg js-modal-close"></div>        
         <div class="modal__content__slide">
@@ -43,7 +43,7 @@
 
         <table style="margin-top: 20px;">
             <tr>
-                <td style="vertical-align: top">
+                <td>
                     <table>
                         <tr>
                             <td>
@@ -86,27 +86,22 @@
                 
                 <td style="width: 100%;vertical-align: top;">               
                 <div class="terminal-right">
-                    <h2>■ 問題はこちら！</h2>
+                    <h2>❏ 課題一覧</h2>
                     <!-- スライドのモーダルを開くボタン -->
-                    <p>
-                        <button class="button js-modal-open" data-target="modal02">                
-                            <p style="margin: auto;">Linuxコマンド【初級】</p>
-                        </button>
-                    </p>
-                    <!-- <h2>■ 先程のスライドはこちら！</h2>
-                    <button class="button js-modal-open" data-target="modal02">                
-                        <p>Linuxコマンド【初級】</p>
-                    </button> -->
-                    <h2>■ ターミナルの使用方法</h2>
-                    <p>
-                        起動してしばらく文字が流れた後に、「~ $」と表示されたらコマンドを打つことが出来ます。<br>
-                        <br>
-                        コマンドが打てない場合は、ターミナルの黒画面上で一度クリックをして下さい。                   
-                    </p>
-                    <p style="color: #ff0101;font-weight: bold;">
-                        ※ページを閉じてしまったり、ページの更新を行ってしまうと内容が初期化されてしまうので気をつけましょう。<br>
-                        ※編集したファイルの状態を保存することは出来ません。
-                    </p>                       
+                    <button class="button js-modal-open" data-target="modal02" style="margin-left: 20px;">                
+                       <p>Linuxコマンド(初級)</p>
+                    </button>
+
+                    <h2 style="margin-top: 20px;">❏ ターミナルの使用方法</h2>
+                    <ul>
+                        <li>起動してしばらく文字が流れた後に、「~ $」と表示されたらコマンドを打つことが出来ます。</li>
+                        <li>コマンドが打てない場合は、ターミナルの黒画面上で一度クリックをして下さい。</li>
+                    </ul>
+                    <br>
+                    <ul style="color: #ff0101;font-weight: bold;">
+                        <li>ページを閉じてしまったり、ページの更新を行ってしまうと内容が初期化されてしまうため注意してください。</li>
+                        <li>編集したファイルの状態を保存することは出来ません。</li>
+                    </ul>                      
                 </div>
                     <!-- <canvas id="fb" class="screen" width="640" height="400">
                         Framebuffer uses canvas

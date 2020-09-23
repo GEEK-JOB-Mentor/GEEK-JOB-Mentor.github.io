@@ -37,7 +37,7 @@ h1 {
     top: 95px;
     left: 40px;
     right: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     overflow: hidden;
     /* 一番上の場合はtopが100px */
     /* margin: 100px 0 60px 0; */
@@ -78,40 +78,54 @@ header {
     background: #0B1A55;
     width: 100%;
     margin: 0;
+    box-shadow: 0 4px 6px rgba(70, 70, 70, 0.507);
+    padding: 10px 0 10px 0;
     /* 表示を上部に固定 */
     position: fixed;
     /* 表示優先度 */
     z-index: 9;
 }
 
-.header-left {
-    float: left;
-    display: block;
-    margin: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
+.header-inline {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 150px 0 150px;
 }
 
-.header-right {
-    /* float: right; */
-    display: block;
-    font-size: 18px;
-    margin: 20px;
-    margin-left: 70%;
+.header-toplink {
+    display: inline-block;
+    margin-left: auto;    
+    padding: 10px 15px 10px 15px;
 }
 
-.header-right a {
-    padding-left: 25px;
+.header-questionnaire {
+    display: inline-block;
+    float: right;
+    height: 35px;
+    margin-left: 7px;
+    border-radius: 5px;
+    font-size: 17px;
+    vertical-align: middle;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    font-weight: bold;
+    background: #ffffff;
+    line-height: 1em;
+    padding: 10px;
+}
+
+.header-questionnaire{
+    color: #0B1A55;
 }
 
 li, ul {
-    list-style: none;
-    padding-left: 14px;
-    color:#B0B0B0;
+    list-style-type: disc;
+    padding-left: 7px;
 }
 
 a:link, a:visited {    
-    color:#FF9000;
+    color:#0B1A55;
 }
 
 img {
@@ -147,11 +161,6 @@ iframe {
     color: #333;
     width: 100%;
     height: 410px;
-}
-
-.terminal-right p{
-    margin: 15px;
-    font-size: 16px;
 }
 
 .screen {
