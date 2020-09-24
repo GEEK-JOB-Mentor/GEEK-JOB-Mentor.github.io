@@ -89,13 +89,13 @@ header {
 .header-inline {
     width: auto;
     margin: 0 auto;
-    padding: 0 150px 0 150px;
+    padding: 0 140px 0 140px;
 }
 
 .header-toplink {
     display: inline-block;
     margin-left: auto;    
-    padding: 10px 15px 10px 15px;
+    padding: 10px;
 }
 
 .header-questionnaire {
